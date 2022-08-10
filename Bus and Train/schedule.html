@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+        * {
+        box-sizing: border-box;
+        }
+
+        .row {
+        margin-left:-5px;
+        margin-right:-5px;
+        
+        }
+        
+        .column {
+        float: left;
+        width: 25%;
+        padding: 15px;
+        margin-left: 85px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        
+        }
+
+        th, td {
+        text-align: center;
+        padding: 16px;
+        }
+        td{
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #FAF5E4;
+
+        }
+
+        tr:nth-child(even) {
+        background-color: #EDDFB3;
+        }
+        .logo{
+          height: 70px;
+          width: 70px;
+        }
+        .image{
+          width: 150px;
+          height: 150px;
+          /* float: initial; */
+        }
+        .bg-img{
+            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/92.jpg');
+            /* background-image: url("C:\Users\prana\Downloads\brendan-steeves-G-YAJ61qIuU-unsplash.jpg"); */
+            height: 100vh;
+        }
+        li{
+          color: whitesmoke;
+          /* padding: 4%; */
+        }
+</style>
+</head>
+<body class="bg-img">
+  <div >
+
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+          <img class="logo" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/noto-emoji/329/bus_1f68c.png" alt="">
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#">Bus</a></li>
+          <li><a href="#">Train</a></li>
+          <li><a href="#">Tram</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </nav>
+    
+
+    <center>
+          <img class="image" src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/mantelpiece-clock_1f570-fe0f.png" alt="">
+            <h2 style="font-style:inherit; color: white;padding-top: 20px; font-size: 30px;">Timings</h2>
+        <p style="font-style: italic; color: white;">From Karlskrona to Lyckeby : </p>
+        <h2 style="color:rgb(247, 247, 247);">Real-time Bus,Train,Tram Schedules On Your Fingertips</h2>
+        
+        <div class="row">
+          <div class="column">
+            <table>
+              <tr>
+                <th>Bus</th>
+              </tr>
+              <tr>
+                <td>17:05pm   -   17:20pm</td>  
+                </tr>
+                <tr>
+                    <td>17:15pm   -   17:30pm</td> 
+                </tr>
+                <tr>
+                  <td>17:23pm -   17:40pm</td>
+                </tr>
+                <tr>
+                  <td>17:24pm -   17:38pm</td>
+                </tr>
+                <tr>
+                  <td>17:30pm -   17:44pm</td>
+              </tr>
+             
+            </table>
+          </div>
+          <div class="column">
+            <table>
+                <tr>
+                    <th>Train</th>
+                  </tr>
+                  <tr>
+                    <td>17:06pm -   17:21pm</td>  
+                </tr>
+                <tr>
+                        <td>17:06pm -   17:26pm</td>   
+                    </tr>
+                    <tr>
+                      <td>17:22pm -   17:41pm</td>
+                    </tr>
+                    <tr>
+                      <td>17:24pm -   17:46pm</td>
+                    </tr>
+            </table>
+          </div>
+          <div class="column">
+            <table>
+                <tr>
+                    <th>Tram</th>
+                  </tr>
+                  <tr>
+                    <td>17:04pm -   17:19pm</td>  
+                </tr>
+                <tr>
+                        <td>17:10pm -   17:31pm</td>   
+                    </tr>
+                    <tr>
+                      <td>17:20pm -   17:38pm</td>
+                    </tr>
+                    <tr>
+                      <td>17:23pm -   17:42pm</td>
+                    </tr>
+            </table>
+          </div>
+        </div>
+        
+        </center>
+        
+    </div>
+</body>
+</html>
